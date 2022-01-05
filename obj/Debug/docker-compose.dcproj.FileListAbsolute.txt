@@ -1,0 +1,15 @@
+C:\WS\Daniel\DockerDiscovery\bin\Debug\Api1.deps.json
+C:\WS\Daniel\DockerDiscovery\bin\Debug\Api1.runtimeconfig.json
+C:\WS\Daniel\DockerDiscovery\bin\Debug\appsettings.Development.json
+C:\WS\Daniel\DockerDiscovery\bin\Debug\appsettings.json
+C:\WS\Daniel\DockerDiscovery\bin\Debug\Api1.exe
+C:\WS\Daniel\DockerDiscovery\bin\Debug\Api2.deps.json
+C:\WS\Daniel\DockerDiscovery\bin\Debug\Api2.runtimeconfig.json
+C:\WS\Daniel\DockerDiscovery\bin\Debug\Api2.exe
+C:\WS\Daniel\DockerDiscovery\bin\Debug\Api1.dll
+C:\WS\Daniel\DockerDiscovery\bin\Debug\Api2.dll
+C:\WS\Daniel\DockerDiscovery\bin\Debug\Api1.pdb
+C:\WS\Daniel\DockerDiscovery\bin\Debug\Api2.pdb
+C:\WS\Daniel\DockerDiscovery\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\WS\Daniel\DockerDiscovery\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\WS\Daniel\DockerDiscovery\obj\Debug\docker-compose.dcproj.CopyComplete

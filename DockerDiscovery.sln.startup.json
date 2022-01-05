@@ -1,0 +1,12 @@
+{
+  "Version": 3,
+  "ListAllProjects": true,
+  "MultiProjectConfigurations": {
+    "Api 1 + 2": {
+      "Projects": {
+        "Api1": {},
+        "Api2": {}
+      }
+    }
+  }
+}
