@@ -1,15 +1,19 @@
-version: '3.4'
-
+version: "3"
 services:
   api1:
-    image: ${DOCKER_REGISTRY-}api1
-    build:
-      context: .
-      dockerfile: Api1/Dockerfile
-
+    build: ./Api1
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - "50001:80"
+      - "50002:443"
   api2:
-    image: ${DOCKER_REGISTRY-}api2
-    build:
-      context: .
-      dockerfile: Api2/Dockerfile
-
+    build: ./Api2
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - WebApiBaseAddress=http://api1
+    ports:
+      - "50003:80"
+      - "50004:443"

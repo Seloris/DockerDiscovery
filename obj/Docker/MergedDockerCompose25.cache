@@ -1,0 +1,25 @@
+services:
+  api1:
+    build:
+      context: C:\WS\Daniel\DockerDiscovery\Api1
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    ports:
+    - published: 50001
+      target: 80
+    - published: 50002
+      target: 443
+  api2:
+    build:
+      context: C:\WS\Daniel\DockerDiscovery\Api2
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      WebApiBaseAddress: http://api1
+    ports:
+    - published: 50003
+      target: 80
+    - published: 50004
+      target: 443
+version: '3'

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: seloris/api1-deployment
+  labels:
+    app: seloris/api1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: seloris/api1
+  template:
+    metadata:
+      labels:
+        app: seloris/api1
+    spec:
+      containers:
+      - name: seloris/api1
+        image: seloris/api1
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80

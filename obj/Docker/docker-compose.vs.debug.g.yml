@@ -1,11 +1,11 @@
-version: '3.4'
+version: '3.9'
 
 services:
   api1:
     image: api1:dev
     container_name: Api1
     build:
-      target: base
+      target: build-env
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "Api1"
@@ -32,7 +32,7 @@ services:
     image: api2:dev
     container_name: Api2
     build:
-      target: base
+      target: build-env
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "Api2"
